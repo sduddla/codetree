@@ -1,41 +1,12 @@
 const fs = require('fs');
-let num = fs.readFileSync(0).toString().trim().split(' ')
+let num = fs.readFileSync(0).toString().trim().split(' ').map(Number);
 
 let a = num[0];
 let b = num[1];
 
-if(a >= b) {
-    console.log(1);
-} else {
-    console.log(0);
-}
-
-if(a > b) {
-    console.log(1);
-} else {
-    console.log(0);
-}
-
-if(b >= a) {
-    console.log(1);
-} else {
-    console.log(0);
-}
-
-if(b > a) {
-    console.log(1);
-} else {
-    console.log(0);
-}
-
-if(a === b) {
-    console.log(1);
-} else {
-    console.log(0);
-}
-
-if(a !== b) {
-    console.log(1);
-} else {
-    console.log(0);
-}
+console.log(a >= b ? 1 : 0);
+console.log(a > b ? 1 : 0);
+console.log(b >= a ? 1 : 0);
+console.log(b > a ? 1 : 0);
+console.log(a === b ? 1 : 0);
+console.log(a !== b ? 1 : 0);

@@ -9,4 +9,4 @@ console.log(a > b ? 1 : 0);
 console.log(b >= a ? 1 : 0);
 console.log(b > a ? 1 : 0);
 console.log(a === b ? 1 : 0);
-console.log(a !== b ? 1 : 0);
+console.log(a != b ? 1 : 0);
